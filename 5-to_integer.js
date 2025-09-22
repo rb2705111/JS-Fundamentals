@@ -1,4 +1,8 @@
 const firstArg = process.argv[2];
-const secondArg = process.argv[3];
+const convertedNumber = parseInt(firstArg, 10);
 
-console.log(`${firstArg} is ${secondArg}`);
+if (isNaN(convertedNumber)) {
+  console.log("Not a number");
+} else {
+  console.log("My number: " + convertedNumber);
+}
